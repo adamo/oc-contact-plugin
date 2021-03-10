@@ -1,0 +1,13 @@
+{% set location = __SELF__.location %}
+<div class="depcore-departments-list">
+	<{{ __SELF__.property('title_html')}} class='{{ __SELF__.property('title_class')}}'>
+	{% if __SELF__.property('title') %}
+		{{ __SELF__.property('title') }}
+    {% else %}
+    	{{ location.name }}
+	{% endif %}
+	</{{ __SELF__.property('title_html')}}>
+	{% for department in location.departments %}
+	  	{% partial '@department' department = department %}
+	{% endfor %}
+</div>

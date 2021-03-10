@@ -1,0 +1,28 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: depcore.contact::lang.location.name
+        searchable: true
+    lat:
+        label: depcore.contact::lang.location.lat
+        searchable: true
+    lon:
+        label: depcore.contact::lang.location.lon
+        searchable: true
+    is_published:
+        label: depcore.contact::lang.location.published
+        type: inetis-list-switch
+        icon: true
+        titleTrue: depcore.contact::lang.global.turn_off
+        titleFalse: depcore.contact::lang.global.turn_on
+        textTrue: depcore.contact::lang.global.turned_on
+        textFalse: depcore.contact::lang.global.turned_off
+    reorderhandle:
+        label: depcore.contact::lang.global.reorder
+        type: partial
+        # path: $/depcore/contact/controllers/departments/_reorderhandle.htm
+        sortable: false
+        width: 60px

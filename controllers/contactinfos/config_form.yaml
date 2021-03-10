@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: depcore.contact::lang.contactinfo.label
+
+# Model Form Field configuration
+form: $/depcore/contact/models/contactinfo/fields.yaml
+
+# Model Class name
+modelClass: Depcore\Contact\Models\Contactinfo
+
+# Default redirect location
+defaultRedirect: depcore/contact/contactinfos
+
+# Create page
+create:
+    title: depcore.contact::lang.contactinfo.create_title
+    redirect: depcore/contact/contactinfos/update/:id
+    redirectClose: depcore/contact/contactinfos
+
+# Update page
+update:
+    title: depcore.contact::lang.contactinfo.update_title
+    redirect: depcore/contact/contactinfos
+    redirectClose: depcore/contact/contactinfos
+
+# Preview page
+preview:
+    title: depcore.contact::lang.contactinfo.preview_title

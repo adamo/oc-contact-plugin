@@ -1,0 +1,9 @@
+people:
+    label: depcore.people::lang.
+    view:
+        list: $/depcore/people/models/people/columns.yaml
+        toolbarButtons: create|delete|link|unlink
+    manage:
+        form: $/depcore/people/models/people/fields.yaml
+        list: $/depcore/people/models/people/columns.yaml
+        recordsPerPage: 10

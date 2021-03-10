@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: depcore.contact::lang.department.name
+        searchable: true
+    location:
+        label: depcore.contact::lang.department.location
+        relation: location
+        select: name
+    is_published:
+        label: depcore.contact::lang.department.is_published
+        type: inetis-list-switch
+        icon: true
+        titleTrue: depcore.contact::lang.global.turn_off
+        titleFalse: depcore.contact::lang.global.turn_on
+        textTrue: depcore.contact::lang.global.turned_on
+        textFalse: depcore.contact::lang.global.turned_off

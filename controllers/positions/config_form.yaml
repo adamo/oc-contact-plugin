@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: depcore.contact::lang.position.label
+
+# Model Form Field configuration
+form: $/depcore/contact/models/position/fields.yaml
+
+# Model Class name
+modelClass: Depcore\Contact\Models\Position
+
+# Default redirect location
+defaultRedirect: depcore/contact/positions
+
+# Create page
+create:
+    title: depcore.contact::lang.position.create_title
+    redirect: depcore/contact/positions/update/:id
+    redirectClose: depcore/contact/positions
+
+# Update page
+update:
+    title: depcore.contact::lang.position.update_title
+    redirect: depcore/contact/positions
+    redirectClose: depcore/contact/positions
+
+# Preview page
+preview:
+    title: depcore.contact::lang.position.preview_title

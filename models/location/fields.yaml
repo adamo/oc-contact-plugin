@@ -1,0 +1,28 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+  fields:
+      name:
+          label: depcore.contact::lang.location.name
+          type: text
+      lat:
+        label: depcore.contact::lang.location.lat
+        type: text
+        span: left
+      lon:
+        label: depcore.contact::lang.location.lon
+        type: text
+        span: right
+      description:
+        label: depcore.contact::lang.location.description
+        type: richeditor
+      cover:
+          label: depcore.contact::lang.location.cover.label
+          mode: image
+          type: fileupload
+          span: left
+      contactinfo:
+          tab: depcore.contact::lang.department.contact_info
+          type: partial
+          tab: depcore.contact::lang.department.contactinfo

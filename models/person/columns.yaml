@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: depcore.contact::lang.person.name
+        searchable: true
+    surname:
+        label: depcore.contact::lang.person.surname
+        searchable: true
+    department:
+      label: depcore.contact::lang.department.label
+      relation: department
+      select: name
+

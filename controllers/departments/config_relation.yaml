@@ -1,0 +1,30 @@
+location:
+    label: depcore.contact::lang.location.label
+    view:
+        list: $/depcore/contact/models/location/columns.yaml
+        form: $/depcore/contact/models/location/fields.yaml
+        toolbarButtons: create|delete|link|unlink
+    manage:
+        form: $/depcore/contact/models/location/fields.yaml
+        list: $/depcore/contact/models/location/columns.yaml
+        recordsPerPage: 10
+contactinfo:
+    label: depcore.contact::lang.contactinfo.label
+    view:
+        list: $/depcore/contact/models/contactinfo/columns.yaml
+        form: $/depcore/contact/models/contactinfo/fields.yaml
+        toolbarButtons: create|delete|link|unlink
+    manage:
+        form: $/depcore/contact/models/contactinfo/fields.yaml
+        list: $/depcore/contact/models/contactinfo/columns.yaml
+        recordsPerPage: 10
+people:
+    label: depcore.contact::lang.people.label
+    view:
+        list: $/depcore/contact/models/person/department_people.yaml
+        form: $/depcore/contact/models/person/fields.yaml
+        toolbarButtons: create|delete|link|unlink
+    manage:
+        form: $/depcore/contact/models/person/fields.yaml
+        list: $/depcore/contact/models/person/columns.yaml
+        recordsPerPage: 10

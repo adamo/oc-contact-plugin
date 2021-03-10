@@ -1,0 +1,17 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: depcore.contact::lang.person.name
+        searchable: true
+    surname:
+        label: depcore.contact::lang.person.surname
+        searchable: true
+    reorderhandle:
+        label: depcore.contact::lang.global.reorder
+        type: partial
+        # path: $/depcore/contact/controllers/departments/_reorderhandle.htm
+        sortable: false
+        width: 60px

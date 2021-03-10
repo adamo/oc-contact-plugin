@@ -1,0 +1,26 @@
+<div class="{{ __SELF__.property('container_class')}}">
+	{% for location in __SELF__.locations %}
+		<div class="{{ __SELF__.property('box_class') }}">
+			{% if location.cover %}
+				<figure><img src="{{ location.cover.path }}" alt="{{ location.cover.description }}" title='{{ location.cover.title }}'></figure>
+			{% endif %}
+			<div class="content">
+				<h4>{{ location.name }}</h4>
+				<ul class="contact-list">
+					{% if location.contactinfo.address %}
+						<li class='address'>{{ __SELF__.property('svg_address')|raw }}<address>{{location.contactinfo.address|striptags('<br>,<strong>
+						')|raw}}</address></li>
+					{% endif %}
+					{% for phone in location.contactinfo.phones %}
+						<li class="phone">{{ __SELF__.property('svg_phone')|raw }}
+							<span>tel/fax:</span> <a href="tel:+48 407 95 96">+48 407 95 96</a>
+						</li>
+					{% endfor %}
+					{% for email in location.contactinfo.emails %}
+						<li class="email">{{ __SELF__.property('svg_email')|raw }}<span>email:</span><a href="mailto:grasant@grasant.com.pl">grasant@grasant.com.pl</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,28 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+fields:
+    emails:
+      label: depcore.contact::lang.contactinfo.emails
+      type: repeater
+      prompt: depcore.contact::lang.contactinfo.add_new_email
+      nameFrom: email
+      form:
+          fields:
+            email:
+              label: depcore.contact::lang.contactinfo.email
+              type: text
+    phones:
+      label: depcore.contact::lang.contactinfo.phones
+      type: repeater
+      prompt: depcore.contact::lang.contactinfo.add_new_phone
+      form:
+          fields:
+            email:
+              label: depcore.contact::lang.contactinfo.phone
+              type: text
+    address:
+      label: depcore.contact::lang.contactinfo.address
+      type: richeditor
+      toolbarButtons: bold|italic|link

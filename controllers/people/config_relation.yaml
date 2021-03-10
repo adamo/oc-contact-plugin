@@ -1,0 +1,10 @@
+contactinfo:
+    label: depcore.contact::lang.contactinfos.menu_label
+    view:
+        list: $/depcore/contact/models/contactinfo/columns.yaml
+        form: $/depcore/contact/models/contactinfo/fields.yaml
+        toolbarButtons: create|delete|link|unlink
+    manage:
+        form: $/depcore/contact/models/contactinfo/fields.yaml
+        list: $/depcore/contact/models/contactinfo/columns.yaml
+        recordsPerPage: 10

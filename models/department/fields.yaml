@@ -1,0 +1,31 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+  fields:
+      name:
+          label: depcore.contact::lang.department.name
+          type:  text
+      location:
+          label: depcore.contact::lang.department.location
+          type: partial
+          tab: depcore.contact::lang.department.location
+      description:
+          label: depcore.contact::lang.department.description
+          type: richeditor
+      is_published:
+        label: depcore.contact::lang.department.is_published
+        type: switch
+        on: depcore.contact::lang.global.no
+        off: depcore.contact::lang.global.yes
+      cover:
+        type: fileupload
+        label: depcore.contact::lang.department.cover
+        mode: image
+      contactinfo:
+        label: depcore.contact::lang.department.contact_info
+        type: partial
+        tab: depcore.contact::lang.department.contactinfo
+      people:
+        tab: depcore.contact::lang.department.people
+        type: partial

@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+      label: depcore.contact::lang.person.name
+      type: text
+      span: left
+    surname:
+      label: depcore.contact::lang.person.surname
+      type: text
+      span: right
+    contactinfo:
+      label: depcore.contact::lang.person.contact_info
+      type: partial

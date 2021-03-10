@@ -1,0 +1,8 @@
+1.0.1: Initial
+1.0.2:
+  - create base tables
+  - create_contact_infos_table.php
+  - create_departments_table.php
+  - create_people_table.php
+  - create_positions_table.php
+  - create_locations_table.php

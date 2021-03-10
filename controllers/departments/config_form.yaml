@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: depcore.contact::lang.department.label
+
+# Model Form Field configuration
+form: $/depcore/contact/models/department/fields.yaml
+
+# Model Class name
+modelClass: Depcore\Contact\Models\Department
+
+# Default redirect location
+defaultRedirect: depcore/contact/departments
+
+# Create page
+create:
+    title: depcore.contact::lang.department.create_title
+    redirect: depcore/contact/departments/update/:id
+    redirectClose: depcore/contact/departments
+
+# Update page
+update:
+    title: depcore.contact::lang.department.update_title
+    redirect: depcore/contact/departments
+    redirectClose: depcore/contact/departments
+
+# Preview page
+preview:
+    title: depcore.contact::lang.department.preview_title
